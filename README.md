@@ -39,6 +39,7 @@ In this view, the user can:
 • Access their user profile (where they can view or modify personal information).
 • Log out.
 The interface is designed to be clean, minimalist, and allows intuitive navigation between projects and core functionalities. From this screen, the user can choose one of their projects to work on, upload images, label them, train models, or test them in real time.
+<img width="814" height="412" alt="image" src="https://github.com/user-attachments/assets/d4760159-aec9-4661-9948-a8dd07f05c46" />
 
 8.4. Image Management and Labeling Screen
 After creating or selecting a project, the user accesses the image management screen.
