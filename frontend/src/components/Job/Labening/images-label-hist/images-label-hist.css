@@ -1,0 +1,170 @@
+/* images-label-history.css */
+
+.images-label-history {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+    background: #f8f9fa;
+    min-height: 100%;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Cards de etiquetas */
+.label-cards-container {
+    flex: 1;
+    background: #fff;
+    padding: 18px 12px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 300px;
+    max-width: 350px;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.label-card {
+    background: #f7fafc;
+    border-radius: 8px;
+    padding: 12px 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.label-card:hover, .label-card.selected {
+    box-shadow: 0 4px 10px rgba(24,144,255,0.07);
+    border: 1px solid #1890ff20;
+    background: #e6f7ff;
+}
+
+.label-card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.label-card-actions button {
+    border: none;
+    background: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.label-card-actions button:hover {
+    color: #1890ff;
+}
+
+.label-search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border: 1px solid #e3e3e3;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+/* Botón para añadir nueva etiqueta */
+.add-label-btn {
+    background: #1890ff;
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.add-label-btn:hover {
+    background: #40a9ff;
+}
+
+/* Formulario de etiqueta */
+.label-form-modal {
+    min-width: 320px;
+    background: #fff;
+    padding: 28px 26px 22px 26px;
+    border-radius: 16px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.09);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 380px;
+    width: 100%;
+}
+
+.label-form-modal input, 
+.label-form-modal select, 
+.label-form-modal textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 7px 10px;
+    border: 1px solid #e3e3e3;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+.label-form-modal .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.label-form-modal .error-message {
+    color: #ff4d4f;
+    background: #fff1f0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 0.97rem;
+    border: 1px solid #ffccc7;
+}
+
+@media (max-width: 900px) {
+    .images-label-history {
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px;
+    }
+    .label-cards-container, .label-form-modal {
+        max-width: 100%;
+        min-width: 220px;
+    }
+}
+
+.add-label-btn {
+    background: #1890ff;
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;             
+    max-width: 240px;        
+    box-sizing: border-box;   
+    text-align: center;       
+}
+
+.add-label-btn:hover {
+    background: #40a9ff;
+}

@@ -1,0 +1,108 @@
+/* Contenedor principal: layout responsive */
+.test-model-page-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    flex-wrap: wrap;
+    /* para pantallas pequeñas */
+    background-color: #e2e2e2;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Columna izquierda */
+.selector-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 22vw;
+    height: 90vh;
+    min-width: 300px;
+    background-color: rgb(232, 232, 232);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Secciones dentro de columna izquierda */
+.camera-selector-container,
+.model-loader,
+.guardar-imagen,
+.modo-captura-switch {
+    width: 90%;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+/* Selectores y entradas */
+.camera-select,
+.camera-input,
+.model-loader-select {
+    width: 100%;
+}
+
+/* Botones cámara */
+.camera-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.camera-button {
+    min-width: 120px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.camera-button.connected {
+    border-color: #52c41a;
+    background-color: #f6ffed;
+    color: #52c41a;
+    font-weight: bold;
+}
+
+/* Columna derecha: imagen o stream */
+.resultado-wrapper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 70vw;
+    height: 90vh;
+    ;
+    min-width: 300px;
+    background-color: rgb(232, 232, 232);
+    padding-top: 5%;
+    padding-bottom: 20px;
+}
+
+.resultado-container {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    background: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Imagen centrada dentro del contenedor */
+.resultado-container img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}

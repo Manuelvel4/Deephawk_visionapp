@@ -1,0 +1,11 @@
+1. Poner log y guardarlo en el S3 // In QA
+2. Poner un modo train local
+3. Poner modo train en S3
+4. Ver que datos combiene guardar --> .bat, .log
+6. Revisar el python. --> ok
+
+Frontend:
+1. Poner un aviso de que necesitamos minimo 20 fotos.
+2. Acomodar frontend para modificación del tamaño 
+
+manu-ssh

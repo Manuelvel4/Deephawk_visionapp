@@ -1,0 +1,10 @@
+.header-bar {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 5%;
+    width: 100%;
+    box-sizing: border-box;
+}

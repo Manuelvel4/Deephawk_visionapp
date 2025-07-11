@@ -1,0 +1,5 @@
+path: ./datasets/fadcce91-8775-4fe4-ad6b-1b8949293ea5
+train: images/train
+val: images/val
+nc: 1
+names: ["crema"]

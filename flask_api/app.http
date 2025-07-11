@@ -1,0 +1,10 @@
+### Captura con modelo YOLO
+
+POST http://localhost:1235/camera/capture
+Content-Type: application/json
+
+{
+  "model_url": "https://bucker-tfm-app-velastegui.s3.eu-north-1.amazonaws.com/41e170e0-ca7f-49e6-9bad-58b19018d1c8/mandodet1/best.pt",
+  "type": "realsense",
+  "ip_url": null
+}

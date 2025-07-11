@@ -1,0 +1,72 @@
+.auth-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-form h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #333;
+}
+
+.auth-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.auth-form .ant-form-item {
+    margin-bottom: 12px;
+    /* control más fino */
+}
+
+.auth-form .ant-input,
+.auth-form .ant-input-password {
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.auth-form .ant-btn {
+    height: 40px;
+    font-size: 16px;
+}
+
+.auth-footer {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    color: #0056b3;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.back-button:hover {
+    color: #0056b3;
+}

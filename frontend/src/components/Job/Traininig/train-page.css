@@ -1,0 +1,234 @@
+/* Estructura general de la página */
+.train-page-container {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 24px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+/* Secciones principales */
+.section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Títulos */
+h1,
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    align-self: center;
+}
+
+/* Formulario lateral izquierdo */
+.train-execution {
+    width: 30vw;
+    flex: 0 0 30vw;
+    min-width: 300px;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+/* Sección de modelos entrenados */
+.train-download {
+    flex: 1;
+    width: 65vw;
+    min-width: 400px;
+    height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Caja de configuración de entrenamiento */
+.train-execution-selection {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.train-execution-selection>* {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Galería de imágenes seleccionadas */
+.selected-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    height: 45vh;
+    width: 100%;
+    overflow-y: auto;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.selected-dashboard img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input de búsqueda */
+.train-download .ant-input-search {
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    transition: border 0.2s ease;
+}
+
+.train-download .ant-input-search:hover,
+.train-download .ant-input-search:focus-within {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.train-download .ant-table-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.train-download .ant-table {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+
+}
+
+.train-download .ant-table-thead>tr>th {
+    background-color: #fafafa;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.train-download .ant-table-tbody>tr>td {
+    font-size: 13px;
+}
+
+/* Botón de copiar URL */
+.train-download .ant-btn {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.train-download .ant-btn:hover {
+    background-color: #40a9ff;
+}
+
+/* Inputs y selects globales del formulario */
+.train-page-container .ant-select,
+.train-page-container input,
+.train-page-container .ant-btn {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Checkbox estilo para Select múltiple */
+.ant-select-item-option-content::before {
+    content: '☐ ';
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.ant-select-item-option-selected .ant-select-item-option-content::before {
+    content: '☑ ';
+}
+
+.search-modelos {
+    width: 20%;
+    min-width: 400px;
+    max-width: 400px;
+    margin: 0 auto 16px auto;
+    border-radius: 8px;
+    align-self: center;
+}
+
+.descripcion-modelo {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    padding: 8px;
+    width: 90%;
+    box-sizing: border-box;
+    resize: vertical;
+    white-space: pre-line;
+}
+.ellipsis-button {
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: #595959; /* gris suave, puedes cambiarlo */
+    font-size: 18px; /* tamaño del icono */
+    cursor: pointer;
+}
+
+.ellipsis-button:hover {
+    color: #000; /* opcional: más oscuro al hacer hover */
+}
+
+
+.train-download-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.train-download-header .search-modelos {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 0px !important;
+}
+
+.train-download-header .ordenar-fecha {
+    width: 40px;  
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 10px !important;
+}

@@ -1,0 +1,5 @@
+path: ./datasets/41e170e0-ca7f-49e6-9bad-58b19018d1c8
+train: images/train
+val: images/val
+nc: 1
+names: ["mando"]

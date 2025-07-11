@@ -1,0 +1,186 @@
+/* Contenedor principal */
+.image-select-container {
+    width: 100%;
+    min-height: 500px;
+    padding: 24px 14px;
+    background: #f5f7fa;
+    border-radius: 18px;
+    box-shadow: 0 2px 22px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+/* Sección de cards de imágenes */
+.image-cards-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.image-cards-list {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Card de imagen individual */
+.image-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(24,144,255,0.07);
+    margin-bottom: 14px;
+    transition: box-shadow 0.16s, border 0.16s;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image-card:hover, .image-card.selected {
+    box-shadow: 0 4px 20px rgba(24,144,255,0.17);
+    border: 1.5px solid #1890ff33;
+    background: #eaf6ff;
+}
+
+.image-card .ant-card-meta-title {
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: #212121;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.image-card img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    max-height: 23vh;
+    object-fit: contain;
+    background: #f4f4f4;
+    margin-bottom: 0.5em;
+}
+
+/* Menú de tres puntos */
+.image-card .ellipsis-menu,
+.ellipsis-menu {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 22px;
+    color: #bbb;
+    cursor: pointer;
+    z-index: 2;
+    background: transparent;
+    border-radius: 50%;
+    transition: color 0.15s, background 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+.image-card .ellipsis-menu:hover,
+.ellipsis-menu:hover {
+    color: #1890ff;
+    background: #f0f6ff;
+}
+
+/* Buscador y botón de añadir */
+.image-cards-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-cards-controls .ant-input-search {
+    flex: 1;
+}
+
+.image-cards-controls .add-label-btn {
+    background: #1890ff;
+    color: #fff;
+    border-radius: 8px;
+    padding: 7px 18px;
+    font-size: 1rem;
+    border: none;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    max-width: 220px;
+    width: auto;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.image-cards-controls .add-label-btn:hover {
+    background: #40a9ff;
+}
+
+/* Formulario modal (ImageForm) */
+.image-form-modal {
+    min-width: 320px;
+    background: #fff;
+    padding: 28px 26px 22px 26px;
+    border-radius: 16px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.image-form-modal input,
+.image-form-modal textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 11px;
+    border: 1px solid #e3e3e3;
+    border-radius: 7px;
+    margin-bottom: 13px;
+    box-sizing: border-box;
+}
+
+.image-form-modal .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.image-form-modal .error-message {
+    color: #ff4d4f;
+    background: #fff1f0;
+    padding: 7px 12px;
+    border-radius: 6px;
+    margin-bottom: 9px;
+    font-size: 0.98rem;
+    border: 1px solid #ffccc7;
+}
+
+@media (max-width: 900px) {
+    .image-select-container {
+        padding: 9px;
+        border-radius: 11px;
+    }
+    .image-cards-list {
+        max-width: 100%;
+    }
+}
